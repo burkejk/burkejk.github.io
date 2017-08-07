@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Seattle</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet"> <!-- This is where .min is added/removed -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+      <!--Navigation Bar-->
+    <nav id="navbar-example" class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Seattle</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav nav-tabs navbar-nav navbar-right" role="tablist">
+            <li class="active"><a href="seattlebasics.html">Visiting<span class="sr-only">(current)</span></a></li>
+            <li><a href="attractions.html">Attractions</a></li>
+            <li><a href="#">Eat + Drink</a></li>
+          </ul>
+          
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="jumbotron basics-hero">
+      <div class="container text-center">
+        <h1>Visiting Seattle</h1>
+      </div>
+    </div>
+ 
+    <div class="container-fluid">
+      <div class="col-sm-10 col-sm-offset-1">
+        <p class="first-text">Info about Seattle - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dignissim odio nec quam ultricies vulputate. Proin vel blandit ipsum, ac venenatis risus. Integer nec vestibulum lacus. Maecenas vehicula mattis mi sed dignissim. Phasellus mattis mi quis lacus tempor, eu venenatis leo tempus. In luctus erat porta, malesuada nunc in, egestas lorem.</p>
+        <div class="page-header text-center">
+          <h1>Weather</h1>
+        </div>
+        <p class="attraction-text">Info about Seattle and Weather - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dignissim odio nec quam ultricies vulputate. Proin vel blandit ipsum, ac venenatis risus. Integer nec vestibulum lacus. Maecenas vehicula mattis mi sed dignissim. Phasellus mattis mi quis lacus tempor, eu venenatis leo tempus. In luctus erat porta, malesuada nunc in, egestas lorem. Nunc facilisis augue orci, at bibendum justo congue ac.</p>
+        <div class="row weather">
+          
+          <div class="col-xs-6 col-md-3">
+            <div class="thumbnail season-backgrounds">
+              <img src="images/Spring.png" alt="..." class="seasons">
+              <div class="caption text-center">
+                <h3>Spring</h3>
+                <p>60-70°</p>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col-xs-6 col-md-3">
+              <div class="thumbnail season-backgrounds">
+                <img src="images/Summer.png" alt="..." class="seasons">
+                <div class="caption text-center">
+                  <h3>Summer</h3>
+                  <p>60-80°</p>
+                </div>
+              </div>
+          </div>
+          
+          <div class="col-xs-6 col-md-3">
+              <div class="thumbnail season-backgrounds">
+                <img src="images/Fall.png" alt="..." class="seasons">
+                <div class="caption text-center">
+                  <h3>Fall</h3>
+                  <p>40-60°</p>
+                </div>
+              </div>
+          </div>
+          
+          <div class="col-xs-6 col-md-3">
+            <div class="thumbnail season-backgrounds">
+              <img src="images/Winter.png" alt="..." class="seasons">
+              <div class="caption text-center">
+                <h3>Winter</h3>
+                <p>30-50°</p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <div class="page-header text-center">
+          <h1>Location</h1>
+        </div>     
+      </div>
+      <!--Map-->     
+      <iframe id="map" class="map col-sm-10 col-sm-offset-1" src="https://snazzymaps.com/embed/4536" width="100%" height="500px" style="border:none;"></iframe>
+    </div>
+    <div class="footer text-center">
+      <p>Designed by Jenn Burke as part of the NYPL's Project Code TechConnect Program.</p>
+      <p>2017</p>
+    </div>
+        
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script> <!-- This is where .min is added/removed -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/script.js"></script>
+    
+  </body>
+</html>

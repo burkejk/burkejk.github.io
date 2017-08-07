@@ -1,0 +1,270 @@
+body {
+ /*background-color: black;*/
+ position: relative;
+ /*padding-top: 50px;*/
+      font-family: 'Roboto Slab', serif;
+}
+
+h1 {
+      font-family: 'Roboto Slab', serif;
+}
+
+.page-header {
+ color: #F37530;
+}
+
+ .navbar  {
+  background-color: #7DCDCD;
+  background: rgba(125, 205, 205, .85);
+  margin-bottom: 0px;
+ }
+ 
+.navbar-default .navbar-brand {
+    color: white;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    background-color: #F37530;
+    color: black;
+}
+
+
+ 
+.navbar-brand {
+    font-size: 3rem;
+    color: black;
+ }
+ 
+ .nav-tabs {
+    border-bottom: 0px solid #ddd;
+}
+ 
+ .navbar-default .navbar-brand,  {
+     color: black;
+ }
+ 
+ .navbar-default .navbar-nav > li > a {
+     color: black;
+ }
+ 
+ .nav-tabs > li > a {
+    margin-right: 0px;
+    border: 1px solid transparent;
+    border-radius: 0 0 0 0;
+}
+ 
+ .nav-tabs > li:hover {
+     background-color: #F37530;
+ }
+ 
+ .sr-only {
+  color: lightblue;
+ }
+
+/*Attraction Thumbnails*/
+
+.attraction-carousel-image {
+  height: 400px;
+}
+
+a.thumbnail {
+ height: 400px;
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-end;
+ color: white;
+ background-size: cover;
+ background-position: center center;
+}
+
+/*Attraction Thumbnail Images below*/
+.attraction-thumbnail-1 {
+  background-image: url("../images/Pike Place Market.jpg");
+}
+
+.attraction-thumbnail-2 {
+  background-image: url("../images/Chihuly Exhibit.jpg");
+}
+
+.attraction-thumbnail-3 {
+  background-image: url("../images/MoPOP.jpg");
+}
+
+.attraction-thumbnail-4 {
+  background-image: url("../images/Space Needle.jpg");
+}
+
+.attraction-thumbnail-5 {
+  background-image: url("../images/Pike Place Market.jpg");
+}
+
+.attraction-thumbnail-6 {
+  background-image: url("../images/Jellyfish.jpg");
+}
+
+.attraction-thumbnail-7 {
+  background-image: url("../images/Seattle Art Museum.jpg");
+}
+
+.attraction-thumbnail-8 {
+  background-image: url("../images/Seattle Great Wheel.jpg");
+}
+
+#map {
+ margin-top: 30px;
+ margin-bottom: 30px;
+}
+
+/*Modals*/
+
+.modal-title a{
+ color: white;
+ font-family: 'Open Sans', sans-serif;
+}
+
+.modal-body {
+  height: 400px;
+}
+
+.attraction-image {
+  height: 100%;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.attraction-description h4 {
+ color: #F37530;
+}
+
+.modal-header {
+ background-color: #7DCDCD;
+}
+
+.modal-footer {
+ background-color: black;
+}
+
+.jumbotron.home-hero {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-image: url("../images/Seattle Skyline.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 700px;
+}
+
+.hero-text {
+    color: white;
+}
+
+.home-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.home-nav-circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 100px;
+    margin: 5px;
+    color: white;
+    background-color: #BA98AD;
+    height: 150px;
+    width: 150px;
+    
+}
+
+.attraction-text {
+    padding-bottom: 40px;   
+}
+
+.footer {
+    background-color: #BA98AD;
+    height: 150px;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.jumbotron.basics-hero {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-image: url("../images/Seattle Great Wheel.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.jumbotron.attractions-hero {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-image: url("../images/Jellyfish.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.first-text {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.weather {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.season-backgrounds {
+    background-color: #BA98AD;
+}
+
+.seasons {
+    width: 60%;
+    padding-top: 10px;
+}
+
+.navbar-home {
+        display: none;
+    }
+
+@media (max-width: 800px) {
+    .navbar-home {
+        display: inline;
+    }
+    
+    .home-nav-circle{
+        display: none;
+    }
+    
+    .jumbotron.home-hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+    }
+}
+
+/*
+<a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;" href="http://unsplash.com/@phoebezzf?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Zhifei Zhou"><span style="display:inline-block;padding:2px 3px;"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white;" viewBox="0 0 32 32"><title></title><path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z"></path></svg></span><span style="display:inline-block;padding:2px 3px;">Zhifei Zhou</span></a>
+
+
+Seattle Great Wheel
+<a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;" href="http://unsplash.com/@luke_pamer?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Luke Pamer"><span style="display:inline-block;padding:2px 3px;"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white;" viewBox="0 0 32 32"><title></title><path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z"></path></svg></span><span style="display:inline-block;padding:2px 3px;">Luke Pamer</span></a>
+
+Aquarium
+<a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;" href="http://unsplash.com/@franc_ist?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Francis Taylor"><span style="display:inline-block;padding:2px 3px;"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white;" viewBox="0 0 32 32"><title></title><path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z"></path></svg></span><span style="display:inline-block;padding:2px 3px;">Francis Taylor</span></a>
+*/
